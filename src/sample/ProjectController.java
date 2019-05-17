@@ -1059,7 +1059,7 @@ public class ProjectController implements Initializable {
         ObservableList<XYChart.Series<String, Double>> lineChartData = FXCollections.observableArrayList();
         LineChart.Series<String, Double> series1 = new LineChart.Series<String, Double>();
         series1.setName("line");
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < spectraID.size(); i++) {
             String line = String.valueOf(spectraID.get(i).getLine());
             Double susp=spectraID.get(i).getSuspicious();
 
@@ -1075,7 +1075,7 @@ public class ProjectController implements Initializable {
         LineChart.Series<String, Double> series1 = new LineChart.Series<String, Double>();
         series1.setName("line");
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < spectraID.size(); i++) {
             String line = String.valueOf(spectraID.get(i).getLine());
             Double susp=spectraID.get(i).getSuspicious();
 
@@ -1091,7 +1091,7 @@ public class ProjectController implements Initializable {
         LineChart.Series<String, Double> series1 = new LineChart.Series<String, Double>();
         series1.setName("line");
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < spectraID.size(); i++) {
             String line = String.valueOf(spectraID.get(i).getLine());
             Double susp=spectraID.get(i).getSuspicious();
 
