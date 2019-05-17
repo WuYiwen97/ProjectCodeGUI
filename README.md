@@ -27,4 +27,4 @@ and mutation-based fault localization (MBFL techniques for short).
 
 
 ### 选择版本
-![gif](https://github.com/WuYiwen97/ProjectCodeGUI/blob/master/src/source/选择版本.gif)
+![gif](https://github.com/WuYiwen97/ProjectCodeGUI/blob/master/src/source/%E9%80%89%E6%8B%A9%E9%A1%B9%E7%9B%AE.gif)
