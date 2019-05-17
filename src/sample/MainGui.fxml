@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ProjectController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox prefHeight="597.0" style="-fx-border-color: #999; -fx-border-width: 2;">
+            <children>
+                <Label text="choose project name:">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin></Label>
+                <FlowPane fx:id="flowpane1" alignment="TOP_CENTER" hgap="7.0">
+                    <children>
+                        <Button mnemonicParsing="false" text="Closure" />
+                        <Button mnemonicParsing="false" text="Lang" />
+                        <Button mnemonicParsing="false" text="Math" />
+                        <Button mnemonicParsing="false" text="Time" />
+                    </children>
+                    <VBox.margin>
+                        <Insets left="10.0" right="10.0" top="10.0" />
+                    </VBox.margin>
+                </FlowPane>
+                <Separator prefWidth="200.0">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </Separator>
+                <Label text="choose Bug-ID" />
+                <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" vbarPolicy="ALWAYS">
+                    <content>
+                        <FlowPane fx:id="flowpane2" alignment="CENTER" hgap="10.0" prefHeight="200.0" prefWidth="200.0" vgap="10.0">
+                            <children>
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                                <Button mnemonicParsing="false" text="Button" />
+                            </children>
+                        </FlowPane>
+                    </content>
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </ScrollPane>
+                <Separator prefWidth="200.0" />
+                <Label text="Current Select Version" />
+                <TextField fx:id="version">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Separator prefWidth="200.0" />
+                <HBox spacing="20.0">
+                    <children>
+                        <Button fx:id="runshell" mnemonicParsing="false" text="Run" />
+                        <TextArea fx:id="run_result" prefHeight="143.0" prefWidth="236.0" />
+                    </children>
+                </HBox>
+                <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="81.0">
+                    <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="how many lines you want?" />
+                        <Label layoutX="193.0" layoutY="14.0" text="PS:(1-100)" />
+                        <TextField fx:id="anaylsis_lines" layoutX="14.0" layoutY="50.0" text="10" />
+                    </children>
+                </AnchorPane>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Button fx:id="output_buggy_lines" mnemonicParsing="false" text="output  buggy-lines">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                        </Button>
+                        <TextArea fx:id="output_result" prefHeight="200.0" prefWidth="200.0">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </TextArea>
+                    </children>
+                </VBox>
+            </children>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+            <children>
+                <Label text="SBFL anaylsis:">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox spacing="10.0">
+                    <children>
+                        <Button fx:id="dstar" mnemonicParsing="false" text="Dstar" />
+                        <Button fx:id="ochiai" mnemonicParsing="false" text="Ochiai" />
+                        <Label text="State:" />
+                        <TextField fx:id="SBFL_state" prefHeight="27.0" prefWidth="100.0" />
+                    </children>
+                    <padding>
+                        <Insets bottom="12.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Separator prefWidth="200.0" />
+                <TextArea fx:id="SBFL_result" prefHeight="343.0" prefWidth="290.0" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextArea>
+                <Separator prefWidth="200.0" />
+                <TabPane prefHeight="255.0" prefWidth="295.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="PieChart">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <PieChart fx:id="bingtu" layoutX="11.0" layoutY="13.0" prefHeight="200.0" prefWidth="268.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="LineChart">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <LineChart fx:id="zhexian" layoutX="9.0" layoutY="13.0" prefHeight="200.0" prefWidth="272.0">
+                                            <xAxis>
+                                                <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                        </LineChart>
+                                        <Label contentDisplay="CENTER" layoutX="-19.0" layoutY="91.0" prefHeight="17.0" prefWidth="67.0" rotate="-90.0" text="suspicion" textFill="#33d017" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+        </VBox>
+        <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #999; -fx-border-width: 2;" GridPane.columnIndex="3">
+            <children>
+                <Label text="SMFL+SBFL anaylsis:">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox spacing="20.0">
+                    <children>
+                        <Button fx:id="metallaxis_dstar" mnemonicParsing="false" text="M_D" />
+                        <Button fx:id="metallaxis_ochiai" mnemonicParsing="false" text="M_O" />
+                        <Label text="State:" />
+                        <TextField fx:id="SMFL_state" alignment="CENTER" prefHeight="27.0" prefWidth="106.0" />
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                    </padding>
+                </HBox>
+                <Separator prefWidth="200.0" />
+                <TextArea fx:id="SMFL_result" prefHeight="340.0" prefWidth="286.0" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </VBox.margin>
+                </TextArea>
+                <Separator prefWidth="200.0" />
+                <TabPane prefHeight="255.0" prefWidth="295.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                        <Tab text="PieChart">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <PieChart fx:id="bingtu2" layoutX="9.0" layoutY="13.0" prefHeight="200.0" prefWidth="268.0" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="LinePane">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <LineChart fx:id="zhexian2" layoutX="7.0" layoutY="13.0" prefHeight="200.0" prefWidth="272.0">
+                                            <xAxis>
+                                                <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                                <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                        </LineChart>
+                                        <Label layoutX="-15.0" layoutY="87.0" rotate="-90.0" text="suspicion" textFill="#e40c0c" />
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+        </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-border-color: #999; -fx-border-width: 2;" GridPane.columnIndex="2">
+         <children>
+            <Label text="SMFL anaylsis:">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox spacing="20.0">
+               <children>
+                  <Button fx:id="metallaxis_only" mnemonicParsing="false" text="Metallaxis" />
+                  <Label text="State:" />
+                  <TextField fx:id="metallaxis_state" alignment="CENTER" prefHeight="27.0" prefWidth="106.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0" />
+            <TextArea fx:id="metallaxis_result" prefHeight="344.0" prefWidth="286.0" wrapText="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Separator prefWidth="200.0" />
+            <TabPane prefHeight="255.0" prefWidth="295.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="PieChart">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <PieChart fx:id="bingtu3" layoutX="9.0" layoutY="13.0" prefHeight="200.0" prefWidth="268.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="LinePane">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <LineChart fx:id="zhexian3" layoutX="7.0" layoutY="13.0" prefHeight="200.0" prefWidth="272.0">
+                                 <xAxis>
+                                    <CategoryAxis side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </LineChart>
+                              <Label layoutX="-15.0" layoutY="87.0" rotate="-90.0" text="suspicion" textFill="#0e27e3" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+         <padding>
+            <Insets left="5.0" right="5.0" />
+         </padding>
+      </VBox>
+    </children>
+</GridPane>
