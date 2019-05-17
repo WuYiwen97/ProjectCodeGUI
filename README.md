@@ -23,7 +23,7 @@ and mutation-based fault localization (MBFL techniques for short).
 
 ## 主界面
 
-![图片](https://github.com/WuYiwen97/ProjectCodeGUI/blob/master/src/source/初始化.png)
+![图片](https://github.com/WuYiwen97/ProjectCodeGUI/blob/master/src/source/M_D分析.png)
 
 
 ### 选择版本
