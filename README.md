@@ -1,6 +1,7 @@
 # 基于覆盖信息的软件错误定位工具
 
 结合基于频谱和变异，提供一个基于覆盖信息的软件错误定位工具，以此实验分析定位工具的准确度和效率。
+第一次一个人做整个项目的（为了毕设），所以很丑的界面和辣鸡的代码，想怎么写就怎么写了。～
 >This tools evaluates 2 families of fault localization techniques: 
 spectrum-based fault localization (SBFL techniques for short) which is the most studied and evaluated FL technique; 
 and mutation-based fault localization (MBFL techniques for short).
@@ -14,6 +15,7 @@ and mutation-based fault localization (MBFL techniques for short).
 * Gzoltar
 * The Major mutation framework
 * Defects4j
+* JavaFX
 
 >Fault-localization-data repository (https://bitbucket.org/rjust/fault-localization-data)
 >the Defects4J database of real faults (https://github.com/rjust/defects4j), 
