@@ -381,7 +381,7 @@ public class ProjectController implements Initializable {
                                         }
                                         StringBuffer msgDstarOutPut=new StringBuffer("");
                                         //FIXME 显示一下有多少行，结束rm了
-                                        //msgDstarOutPut.append("程序有 "+(first.length-1)+" 行\n");
+                                        msgDstarOutPut.append("程序有 "+(first.length-1)+" 行\n");
 
                                         //信息都存在在 spectraID 里面
                                         /**

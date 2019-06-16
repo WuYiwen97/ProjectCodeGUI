@@ -47,3 +47,38 @@ CREATE TABLE `spectra_data_Metallaxis` (
   `suspicion` double DEFAULT NULL COMMENT '怀疑度',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+CREATE TABLE `dstar_time` (
+                            `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+                            `versionid` varchar(255) NOT NULL COMMENT 'project_name',
+                            `bugid` int(11) NOT NULL COMMENT 'bugid',
+                            `run_time` bigint(20) DEFAULT NULL,
+                            PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+CREATE TABLE `Metall_time` (
+                              `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+                              `versionid` varchar(255) NOT NULL COMMENT 'project_name',
+                              `bugid` int(11) NOT NULL COMMENT 'bugid',
+                              `run_time` bigint(20) DEFAULT NULL,
+                              PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+CREATE TABLE `ochiai_time` (
+                              `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+                              `versionid` varchar(255) NOT NULL COMMENT 'project_name',
+                              `bugid` int(11) NOT NULL COMMENT 'bugid',
+                              `run_time` bigint(20) DEFAULT NULL,
+                              PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+CREATE TABLE `Metall_Dstar_time` (
+                             `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+                             `versionid` varchar(255) NOT NULL COMMENT 'project_name',
+                             `bugid` int(11) NOT NULL COMMENT 'bugid',
+                             `run_time` bigint(20) DEFAULT NULL,
+                             PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+CREATE TABLE `Metall_Ochiai_time` (
+                             `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+                             `versionid` varchar(255) NOT NULL COMMENT 'project_name',
+                             `bugid` int(11) NOT NULL COMMENT 'bugid',
+                             `run_time` bigint(20) DEFAULT NULL,
+                             PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;

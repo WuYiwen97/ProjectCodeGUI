@@ -274,8 +274,6 @@ public class DBController {
                 rs=pstmt.executeQuery();
                 //如果存在
                 if (rs.next()){
-
-
                     String sqlupdate="update spectra_data_Metall_ochiai set suspicion =? where versionid =? and bugid =? and filename =? and line =?";
                     pstmt =conn.prepareStatement(sqlupdate);
                     pstmt.setDouble(1,spectra.getSuspicious());
