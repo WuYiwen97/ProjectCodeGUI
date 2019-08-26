@@ -6,6 +6,10 @@
 spectrum-based fault localization (SBFL techniques for short) which is the most studied and evaluated FL technique; 
 and mutation-based fault localization (MBFL techniques for short).
 
+
+## 软件著作权证书
+![图片](https://github.com/WuYiwen97/ProjectCodeGUI/blob/master/src/source/%E8%BD%AF%E4%BB%B6%E8%91%97%E4%BD%9C%E6%9D%83%E8%AF%81%E4%B9%A6.jpg)
+
 ## Techniques
 * SBFL
     * Ochiai
